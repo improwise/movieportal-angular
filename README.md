@@ -1,27 +1,30 @@
 # MovieportalAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
+MovieportalAngular is a web application for browsing and discovering movies. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Browse popular movies
+- Search for movies by title
+- View detailed movie information
 
-## Code scaffolding
+## Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Node.js (v14 or later)
+- npm (v6 or later)
+- Angular CLI (v18.0.1)
 
-## Build
+## Configuration
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+This project uses The Movie Database (TMDB) API. To run the application, you need to obtain an API key from TMDB and add it to your environment.
 
-## Running unit tests
+1. Sign up for an account at [TMDB](https://www.themoviedb.org/signup) if you haven't already.
+2. Go to your [account settings](https://www.themoviedb.org/settings/api) and create a new API key.
+3. Create a `.env` file in the root directory of the project.
+4. Add your API key to the `.env` file.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+**Note:** Never commit your API key to version control. The `.env` file should be kept local and not shared publicly.
 
-## Running end-to-end tests
+## License
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
