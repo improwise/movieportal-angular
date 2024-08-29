@@ -2,6 +2,8 @@
 
 MovieportalAngular is a web application for browsing and discovering movies. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
 
+Demo available at: [movieportal.improwise.com](https://movieportal.improwise.com)
+
 ## Features
 
 - Browse popular movies
