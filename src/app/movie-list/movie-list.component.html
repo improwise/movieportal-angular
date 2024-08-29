@@ -1,0 +1,6 @@
+<app-search (search)="onSearch($event)"></app-search>
+<div class="movie-grid">
+  @for (movie of movies; track movie.id) {
+    <app-movie-card [movie]="movie"></app-movie-card>
+  }
+</div>

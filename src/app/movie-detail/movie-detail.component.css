@@ -1,0 +1,140 @@
+.movie-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+text-align: left;
+}
+
+.movie-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+
+.movie-poster img {
+  max-width: 100%;
+  height: auto;
+}
+
+.movie-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .movie-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .movie-poster {
+    flex: 0 0 300px;
+    margin-right: 20px;
+  }
+
+  .movie-info {
+    flex: 1;
+    text-align: left;
+  }
+}
+
+.movie-poster {
+  flex: 0 0 300px;
+}
+
+.movie-poster img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.movie-info {
+  flex: 1;
+}
+
+.movie-title {
+  margin-top: 0;
+  font-size: 2.5em;
+  text-align: left;
+}
+
+.movie-year {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.movie-overview {
+  line-height: 1.6;
+}
+
+.cast-title {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.cast-list {
+  padding-left: 20px;
+}
+
+button {
+  margin-top: 20px;
+}
+
+.genre-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.genre-chip {
+  font-weight: 500;
+  color: white !important;
+}
+
+/* Genre colors */
+.genre-28 { background-color: #FF5252 !important; }  /* Action */
+.genre-12 { background-color: #FF4081 !important; }  /* Adventure */
+.genre-16 { background-color: #E040FB !important; }  /* Animation */
+.genre-35 { background-color: #7C4DFF !important; }  /* Comedy */
+.genre-80 { background-color: #536DFE !important; }  /* Crime */
+.genre-99 { background-color: #448AFF !important; }  /* Documentary */
+.genre-18 { background-color: #40C4FF !important; }  /* Drama */
+.genre-10751 { background-color: #18FFFF !important; } /* Family */
+.genre-14 { background-color: #64FFDA !important; }  /* Fantasy */
+.genre-36 { background-color: #69F0AE !important; }  /* History */
+.genre-27 { background-color: #B2FF59 !important; }  /* Horror */
+.genre-10402 { background-color: #EEFF41 !important; } /* Music */
+.genre-9648 { background-color: #FFFF00 !important; } /* Mystery */
+.genre-10749 { background-color: #FFD740 !important; } /* Romance */
+.genre-878 { background-color: #FFAB40 !important; }  /* Science Fiction */
+.genre-10770 { background-color: #FF6E40 !important; } /* TV Movie */
+.genre-53 { background-color: #FF5252 !important; }  /* Thriller */
+.genre-10752 { background-color: #FF4081 !important; } /* War */
+.genre-37 { background-color: #E040FB !important; }  /* Western */
+
+.movie-title {
+  margin-bottom: 8px;
+}
+
+.movie-year {
+  margin-bottom: 16px;
+  color: #666;
+}
+
+.movie-overview {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.cast-title {
+  margin-bottom: 8px;
+}
+
+.cast-list {
+  margin-bottom: 24px;
+}

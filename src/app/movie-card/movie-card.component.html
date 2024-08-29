@@ -1,0 +1,17 @@
+<mat-card class="movie-card" [routerLink]="['/movie', movie.id]">
+  <img
+    mat-card-image
+    [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path"
+    alt="Movie poster for {{ movie.title }}"
+  />
+  <mat-card-content>
+    <h2 class="movie-title">{{ movie.title }}</h2>
+    <div class="movie-info">
+      <div class="movie-rating">
+        <mat-icon>star</mat-icon>
+        {{ movie.vote_average | number:'1.1-1' }}
+      </div>
+      <div class="movie-genres">{{ getGenres() }}</div>
+    </div>
+  </mat-card-content>
+</mat-card>

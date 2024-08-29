@@ -1,0 +1,46 @@
+.movie-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-card img {
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+}
+
+.movie-card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie-card-title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.movie-card-genre {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Add vertical space between rating and genres */
+}
+
+.movie-rating {
+  display: flex;
+  align-items: center;
+padding: 0.5rem 0;
+}
+
+.movie-genres {
+  font-size: 0.8rem;
+  color: #666;
+}

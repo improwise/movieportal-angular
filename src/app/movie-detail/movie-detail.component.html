@@ -1,0 +1,38 @@
+@if (movie) {
+  <div class="movie-detail">
+    <div class="movie-content">
+      <div class="movie-poster">
+        <img src="https://image.tmdb.org/t/p/w500{{ movie.poster_path }}" alt="{{ movie.title }}">
+      </div>
+      <div class="movie-info">
+        <h2 class="movie-title">{{ movie.title }}</h2>
+        <div class="movie-meta">
+          <span class="movie-year">{{ movie.release_date | date:'yyyy' }}</span>
+          <div class="movie-rating">
+            <mat-icon>star</mat-icon>
+            <span class="rating-value">{{ movie.vote_average | number:'1.1-1' }}</span>
+            <span class="rating-max">/10</span>
+          </div>
+        </div>
+        <!-- Remove this redundant rating -->
+        <!-- <p class="movie-rating">Rating: {{ movie.vote_average | number:'1.1-1' }}/10</p> -->
+        <div class="genre-chips">
+          @for (genre of movie.genres; track genre.id) {
+            <mat-chip-option 
+              disabled
+              class="genre-chip genre-{{ genre.id }}"
+            >
+              {{ genre.name }}
+            </mat-chip-option>
+          }
+        </div>
+        <p class="movie-overview">{{ movie.overview }}</p>
+        <h3 class="cast-title">Cast:</h3>
+        <p class="cast-list">
+          {{ topCastMembers }}
+        </p>
+        <button mat-raised-button color="primary" routerLink="/">Back to List</button>
+      </div>
+    </div>
+  </div>
+}
