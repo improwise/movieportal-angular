@@ -2,7 +2,7 @@
 
 Movieportal Angular is an Angular web application for browsing and discovering movies.
 
-Demo available at: [movieportal.improwise.com](https://movieportal-angular.improwise.com)
+Demo available at: [movieportal-angular.improwise.com](https://movieportal-angular.improwise.com)
 
 ## Features
 
