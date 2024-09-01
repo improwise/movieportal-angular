@@ -1,4 +1,4 @@
-# MovieportalAngular
+# Movieportal Angular
 
 Movieportal Angular is an Angular web application for browsing and discovering movies.
 
