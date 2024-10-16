@@ -33,7 +33,10 @@ jobs:
           output_location: "dist/movieportal-angular/browser" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
         env: # Add environment variables here
-          NG_APP_TMDB_API_KEY: 8f430e04903eb2246188f82dd8243c87
+          NG_APP_API_URL: https://improwise-fub-api-dev-basic-linux-hdeccbfrg0b8g3ab.swedencentral-01.azurewebsites.net
+          NG_APP_BASE_URL: https://ambitious-cliff-0dcbea103.5.azurestaticapps.net
+          NG_APP_CLIENT_ID: FUB_App_Azure_Dev
+          NG_APP_ISSUER: https://improwise-fub-api-dev-basic-linux-hdeccbfrg0b8g3ab.swedencentral-01.azurewebsites.net/
     
 
   close_pull_request_job:
